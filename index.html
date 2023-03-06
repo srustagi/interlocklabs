@@ -7,68 +7,104 @@
 		<title>stealth co</title>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
-
 			@media screen and (min-width:320px) {
-				#whatsup {
-					height: 100px;
-					width: 100px;
-					margin: 0 auto;
-					margin-top: 50px;
-					background: url('logo.png');
-					background-size: contain;
-					background-repeat: no-repeat;
+				a, a:link, a:hover, a:visited, a:active {
+					text-decoration: none;
+					font-size: 20px;
+					font-family: 'Nanum Myeongjo', serif;
+					font-weight: 700;
+					color: #3498db;
 				}
 
 				#content {
-					width:  200px;
-					justify-content: space-between;
+					margin: 0 auto;
+					margin-top: 50px;
+					display: flex;
+					align-items: center;
+					min-width:  200px;
+					display: flex;
+					justify-content: space-around;
 				}
 
-				#pp {
-					width: 200px;
-					text-align: center;
-					margin: 0 auto;
+				.profilewrapper {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.profilewrapper a {
 					margin-top: 25px;
+				}
+
+				#shiv, #kamil {
+					width: 100px;
+					height: 100px;
+					object-fit: cover;
+					border-radius: 50%;
 				}
 			}
 
 			@media screen and (min-width:720px) {
 				#content {
 					width: 405px;
-					justify-content: space-around;
-				}
-
-				#pp {
-					width: 405px;
 				}
 			}
 
-			#whatsup {
+			@media screen and (min-width:1080px) {
+				#content {
+					width: 650px;
+				}
+
+				#shiv, #kamil {
+					width: 150px;
+					height: 150px;
+				}
 				
+				a, a:link, a:hover, a:visited, a:active {
+					font-size: 25px;
+				}
+
+				p {
+					margin-top: 7px;
+					font-size: 22px;
+				}
 			}
 
-			#content {
-				margin: 0 auto;
-				margin-top: 50px;
-				display: flex;
-				align-items: center;
+			@media screen and (min-width:1400px) {
+				#content {
+					width: 1000px;
+				}
+
+				#shiv, #kamil {
+					width: 200px;
+					height: 200px;
+				}
+				
+				a, a:link, a:hover, a:visited, a:active {
+					font-size: 40px;
+				}
+
+				p {
+					margin-top: 15px;
+					font-size: 30px;
+				}
 			}
 
-			a, a:link, a:hover, a:visited, a:active {
-				text-decoration: none;
-				font-size: 20px;
-				font-family: 'Nanum Myeongjo', serif;
-				font-weight: 700;
-				color: #3498db;
-			}
 		</style>
 	</head>
 	<body>
 
-	<div id="whatsup"></div>
 	<div id="content">
-		<div><a href="mailto:stealthco.ceo@gmail.com">kamil</a></div>
-		<div><a href="mailto:stealthco.cto@gmail.com">shiv</a></div>
+		<div class="profilewrapper">
+			<img id="kamil" src="kamil.png" alt="kamil">
+			<a class="link" href="mailto:kamil@tryinterlock.com">kamil</a>
+			<p>ceo</p>
+		</div>
+		<div class="profilewrapper">
+			<img id="shiv" src="shiv.png" alt="shiv">
+			<a class="link" href="mailto:shiv@tryinterlock.com">shiv</a>
+			<p>cto</p>
+		</div>
 	</div>
 
 	</body>
